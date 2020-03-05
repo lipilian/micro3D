@@ -34,7 +34,7 @@ def main():
     tp.annotate(f, img);
     h1.savefig('target.png')
 
-    plt.close()
+    f.to_csv(r'./CenterPoints.csv')
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("-p", "--Path", type=str, help="Path to save the images")
